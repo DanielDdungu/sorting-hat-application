@@ -1,0 +1,1260 @@
+const Data = [
+    {
+        title: "Dawn or dusk?",
+        answers: [
+            {
+                title: "Dawn",
+                scores: {
+                    g: 100,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Dusk",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "Forest or river?",
+        answers: [
+            {
+                title: "Forest",
+                scores: {
+                    g: 100,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "River",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "Moon or stars?",
+        answers: [
+            {
+                title: "Moon",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Stars",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Which of the following would you most hate people to call you?",
+        answers: [
+            {
+                title: "Ordinary",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Ignorant",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Cowardly",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Selfish",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "After you have died, what would you most like people to do when they hear your name?",
+        answers: [
+            {
+                title: "Miss you, but smile",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Ask for more stories about your adventures",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Think with admiration of your achievements",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "I don't care what people think of me after I'm dead, it's what they think of me while I'm alive that counts",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "How would you like to be known to history?",
+        answers: [
+            {
+                title: "The Wise",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The Good",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "The Great",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "The Bold",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Given the choice, would you rather invent a potion that would guarantee you:",
+        answers: [
+            {
+                title: "Love?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Glory?",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Wisdom?",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Power?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary.  If it lured you, it would smell of:",
+        answers: [
+            {
+                title: "A crackling log fire",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The sea",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Fresh parchment",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Home",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Four goblets are placed before you.  Which would you choose to drink?",
+        answers: [
+            {
+                title: "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "What kind of instrument most pleases your ear?",
+        answers: [
+            {
+                title: "The violin",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "The trumpet",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "The piano",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The drum",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "You enter an enchanted garden.  What would you be most curious to examine first?",
+        answers: [
+            {
+                title: "The silver leafed tree bearing golden apples",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The fat red toadstools that appear to be talking to each other",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "The bubbling pool, in the depths of which something luminous is swirling",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "The statue of an old wizard with a strangely twinkling eye",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Four boxes are placed before you. Which would you try and open?",
+        answers: [
+            {
+                title: "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The small pewter box, unassuming and plain, with a scratched message upon it that reads \u2018I open only for the worthy.'",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "A troll has gone beserk in the Headmaster's study at Hogwarts.  It is about to smash, crush and tear several irreplaceable items and treasures. In which order would you rescue these objects from the troll's club, if you could?",
+        answers: [
+            {
+                title: "First, a nearly perfected cure for dragon pox. Then student records going back 1000 years. Finally, a mysterious handwritten book full of strange runes.",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "First, student records going back 1000 years. Then a mysterious handwritten book full of strange runes. Finally, a nearly perfected cure for dragon pox.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "First, a mysterious handwritten book full of strange runes. Then a nearly perfected cure for dragon pox. Finally, student records going back 1000 years.",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "First, a nearly perfected cure for dragon pox. Then a mysterious handwritten book full of strange runes. Finally, student records going back 1000 years.",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "First student records going back 1000 years. Then, a nearly perfected cure for dragon pox. Finally, a mysterious handwritten book full of strange runes.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "First,  a mysterious handwritten book full of strange runes. Then student records going back 1000 years. Finally, a nearly perfected cure for dragon pox.",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "Which of the following do you find most difficult to deal with?",
+        answers: [
+            {
+                title: "Hunger",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Cold",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 100,
+                },
+            },
+            {
+                title: "Loneliness",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Boredom",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Being ignored",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "Which would you rather be:",
+        answers: [
+            {
+                title: "Envied?",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Imitated?",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Trusted?",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Praised?",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 50,
+                },
+            },
+            {
+                title: "Liked?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Feared?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "If you could have any power, which would you choose?",
+        answers: [
+            {
+                title: "The power to read minds",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "The power of invisibility",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 50,
+                    s: 0,
+                },
+            },
+            {
+                title: "The power of superhuman strength",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 50,
+                },
+            },
+            {
+                title: "The power to speak to animals",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "The power to change the past",
+                scores: {
+                    g: 50,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "The power to change your appearance at will",
+                scores: {
+                    g: 50,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "What are you most looking forward to learning at Hogwarts?",
+        answers: [
+            {
+                title: "Apparition and Disapparition (being able to materialize and dematerialize at will)",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Transfiguration (turning one object into another object)",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Flying on a broomstick",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Hexes and jinxes",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "All about magical creatures, and how to befriend/care for them",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Secrets about the castle",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Every area of magic I can",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Which of the following would you most like to study?",
+        answers: [
+            {
+                title: "Centaurs",
+                scores: {
+                    g: 100,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Goblins",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 50,
+                },
+            },
+            {
+                title: "Merpeople",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 100,
+                },
+            },
+            {
+                title: "Ghosts",
+                scores: {
+                    g: 100,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Vampires",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Werewolves",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Trolls",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass.  Do you:",
+        answers: [
+            {
+                title: "Attempt to confuse the troll into letting all three of you pass without fighting?",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Suggest drawing lots to decide which of you will fight?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Suggest that all three of you should fight (without telling the troll)?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Volunteer to fight?",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "One of your house mates has cheated in a Hogwarts exam by using a Self-Spelling Quill. Now he has come top of the class in Charms, beating you into second place. Professor Flitwick is suspicious of what happened.  He draws you to one side after his lesson and asks you whether or not your classmate used a forbidden quill.  What do you do?",
+        answers: [
+            {
+                title: "Lie and say you don't know (but hope that somebody else tells Professor Flitwick the truth).",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Tell Professor Flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Tell Professor Flitwick the truth.  If your classmate is prepared to win by cheating, he deserves to be found out.  Also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "You would not wait to be asked to tell Professor Flitwick the truth.  If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "A Muggle confronts you and says that they are sure you are a witch or wizard.  Do you:",
+        answers: [
+            {
+                title: "Ask what makes them think so?",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Agree, and ask whether they'd like a free sample of a jinx?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Agree, and walk away, leaving them to wonder whether you are bluffing?",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Tell them that you are worried about their mental health, and offer to call a doctor.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Which nightmare would frighten you most?",
+        answers: [
+            {
+                title: "Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling.",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "An eye at the keyhole of the dark, windowless room in which you are locked.",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Waking up to find that neither your friends nor your family have any idea who you are.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Being forced to speak in such a silly voice that hardly anyone can   understand you, and everyone laughs at you.",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "Which road tempts you most?",
+        answers: [
+            {
+                title: "The wide, sunny, grassy lane",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "The narrow, dark, lantern-lit alley",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "The twisting, leaf-strewn path through woods",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "The cobbled street lined with ancient buildings",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Late at night, walking alone down the street, you hear a peculiar cry that you believe to have a magical source.  Do you:",
+        answers: [
+            {
+                title: "Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Draw your wand and try to discover the source of the noise?",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Draw your wand and stand your ground?",
+                scores: {
+                    g: 0,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "If you were attending Hogwarts, which pet would you choose to take with you?",
+        answers: [
+            {
+                title: "Tabby cat",
+                scores: {
+                    g: 50,
+                    r: 0,
+                    h: 0,
+                    s: 50,
+                },
+            },
+            {
+                title: "Siamese cat",
+                scores: {
+                    g: 25,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Ginger cat",
+                scores: {
+                    g: 25,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Black cat",
+                scores: {
+                    g: 25,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "White cat",
+                scores: {
+                    g: 25,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Tawny owl",
+                scores: {
+                    g: 25,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Screech owl",
+                scores: {
+                    g: 25,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Brown owl",
+                scores: {
+                    g: 25,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Snowy owl",
+                scores: {
+                    g: 25,
+                    r: 50,
+                    h: 50,
+                    s: 0,
+                },
+            },
+            {
+                title: "Barn owl",
+                scores: {
+                    g: 25,
+                    r: 100,
+                    h: 0,
+                    s: 0,
+                },
+            },
+            {
+                title: "Common toad",
+                scores: {
+                    g: 25,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Natterjack toad",
+                scores: {
+                    g: 25,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Dragon toad",
+                scores: {
+                    g: 50,
+                    r: 0,
+                    h: 50,
+                    s: 0,
+                },
+            },
+            {
+                title: "Harlequin toad",
+                scores: {
+                    g: 25,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Three toed tree toad",
+                scores: {
+                    g: 25,
+                    r: 50,
+                    h: 50,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Black or white?",
+        answers: [
+            {
+                title: "Black",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "White",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 100,
+                    s: 0,
+                },
+            },
+        ],
+    },
+    {
+        title: "Heads or tails?",
+        answers: [
+            {
+                title: "Heads",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 100,
+                    s: 0,
+                },
+            },
+            {
+                title: "Tails",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 0,
+                    s: 100,
+                },
+            },
+        ],
+    },
+    {
+        title: "Left or right?",
+        answers: [
+            {
+                title: "Left",
+                scores: {
+                    g: 0,
+                    r: 100,
+                    h: 0,
+                    s: 100,
+                },
+            },
+            {
+                title: "Right",
+                scores: {
+                    g: 100,
+                    r: 0,
+                    h: 100,
+                    s: 0,
+                },
+            },
+        ],
+    },
+];
+
+export default Data();
