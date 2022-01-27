@@ -1,8 +1,10 @@
-//import React, { useState } from "react";
-//import Data from "data/Data";
+import React, { useState } from "react";
+import Data from "../data/Data.json";
 
 function Questions() {
-    //const [questions, setQuestions] = useState(Data);
+    const [currentQuestion, setCurretQuestion] = useState(0);
+
+    console.log(Data[12].title);
     return (
         <>
             <div className="relative">
@@ -53,63 +55,18 @@ function Questions() {
                 <div className=" px-12 overflow-y-auto   fixed top-60 left-0 right-0 h-64 ">
                     <div className="alert alert-success  my-3 rounded-tr-none">
                         <div className="flex-1">
-                            <label>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                            <label className="mb-2 ">
+                                {Data[currentQuestion].title}
                             </label>
                         </div>
                     </div>
-                    <div className="alert alert-success my-3 rounded-tr-none">
-                        <div className="flex-1">
-                            <label>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
-                            </label>
-                        </div>
-                    </div>
-                    <div className="alert alert-success  rounded-tr-none">
-                        <div className="flex-1">
-                            <label>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
-                            </label>
-                        </div>
-                    </div>
-                    <div className="alert alert-success my-3 rounded-tr-none">
-                        <div className="flex-1">
-                            <label>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
-                            </label>
-                        </div>
-                    </div>
-                    <div className="alert alert-success my-3 rounded-tr-none">
-                        <div className="flex-1">
-                            <label>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
-                            </label>
-                        </div>
+
+                    <div className=" grid grid-cols-4 md:grid-cols-2 gap-4 justify-round place-content-center">
+                        {Data[currentQuestion].answers.map((answer) => (
+                            <button className="btn bg-info">
+                                {answer.title}
+                            </button>
+                        ))}
                     </div>
                 </div>
             </div>
