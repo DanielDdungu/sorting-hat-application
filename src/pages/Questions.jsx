@@ -38,7 +38,7 @@ function Questions() {
     return (
         <>
             <div className="relative">
-                <div className="grid grid-cols-4 gap-4 justify-between place-content-center h-40 ... bg-base-200 drop-shadow-2xl fixed top-24 left-0 right-0">
+                <div className="grid grid-cols-4 gap-3 justify-between place-content-center h-40 ... bg-base-200 drop-shadow-2xl fixed top-24 left-0 right-0">
                     {Object.entries(housePoints).map(([house, points]) => {
                         return (
                             <div className="grid place-items-center mb-8">
@@ -46,12 +46,12 @@ function Questions() {
                                     {house}
                                 </h1>
                                 <div className="avatar lg:scale-100 md:scale-50">
-                                    <div className=" rounded-box w-24 h-24  ring ring-primary ring-offset-base-100 ring-offset-2 my-2">
+                                    <div className=" rounded-box w-24 h-24 ring ring-primary ring-offset-base-100 ring-offset-2 my-2">
                                         <img
                                             src="http://daisyui.com/tailwind-css-component-profile-1@94w.png"
                                             alt=""
                                         />
-                                        <h2>{points}</h2>
+                                        <h2>{points / 100}</h2>
                                     </div>
                                 </div>
 
@@ -62,7 +62,7 @@ function Questions() {
                 </div>
 
                 {/**Question Section*/}
-                <div className=" px-12 overflow-y-auto absolute inset-x-0 bottom-0 h-64 top-64">
+                <div className=" lg:px-12 md:px-12 overflow-y-auto absolute inset-x-0 bottom-0 h-64 top-64">
                     {/* 0 is falsy */}
                     {prevQuestions.length ? (
                         <>
