@@ -42,12 +42,13 @@ function Questions() {
                     {Object.entries(housePoints).map(([house, points]) => {
                         return (
                             <div className="grid place-items-center mb-8">
-                                <h1 className="text-2xl uppercase my-2">
+                                <h1 className="lg:text-2xl md:text-base uppercase my-2">
                                     {house}
                                 </h1>
-                                <div className="avatar lg:scale-100 md:scale-50">
-                                    <div className=" rounded-box w-24 h-24 ring ring-primary ring-offset-base-100 ring-offset-2 my-2">
+                                <div className="avatar  ">
+                                    <div className=" rounded-box w-24 h-24   ring ring-sky-600 ring-offset-sky-200 ring-offset-2 my-2">
                                         <img
+                                            className=" md:scale-50 lg:scale-100"
                                             src="http://daisyui.com/tailwind-css-component-profile-1@94w.png"
                                             alt=""
                                         />
@@ -55,14 +56,16 @@ function Questions() {
                                     </div>
                                 </div>
 
-                                <h1 className="text-2xl">{points}</h1>
+                                <h1 className="lg:text-2xl md:text-base">
+                                    {points}
+                                </h1>
                             </div>
                         );
                     })}
                 </div>
 
                 {/**Question Section*/}
-                <div className=" lg:px-12 md:px-12 overflow-y-auto absolute inset-x-0 bottom-0 h-64 top-64">
+                <div className=" lg:px-12 md:px-12 overflow-y-auto absolute inset-x-0 bottom-0 h-64 top-64 ">
                     {/* 0 is falsy */}
                     {prevQuestions.length ? (
                         <>
