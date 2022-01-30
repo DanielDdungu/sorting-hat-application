@@ -23,7 +23,7 @@ function Welcome() {
             <div className="hero h-screen bg-base-200">
                 <div className="text-center hero-content">
                     <div className="flex flex-col justify-center">
-                        <div className="card-title font-bold text-3xl">
+                        <div className="card-title font-bold lg:text-3xl md:text-xl">
                             WELCOME TO SORTING HAT
                         </div>
                         <div>
