@@ -76,11 +76,16 @@ function Questions() {
                                         </div>
                                     </div>
                                     {/** Answer*/}
-                                    <div className="p-6 max-w-sm my-3  bg-slate-300 rounded-xl shadow-lg flex items-center space-x-4 rounded-br-none ring-blue-300">
-                                        <div>
-                                            <p className="text-neautral-900">
-                                                {question.selectedAnswer.title}
-                                            </p>
+                                    <div className="flex flex-row-reverse">
+                                        <div className=" right-0 p-6 max-w-sm my-3  bg-slate-300 rounded-xl shadow-lg flex items-center space-x-4 rounded-br-none ring-blue-300">
+                                            <div>
+                                                <p className="text-neautral-900">
+                                                    {
+                                                        question.selectedAnswer
+                                                            .title
+                                                    }
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -96,10 +101,10 @@ function Questions() {
                         </div>
                     </div>
 
-                    <div className=" grid grid-cols-4 md:grid-cols-2 gap-4 justify-between place-content-center">
+                    <div className=" grid grid-cols-4 md:grid-cols-2 gap-4 justify-between place-content-center lg:mx-12 md:mx-0 drop-shadow-lg  mb-5">
                         {currentQuestion.answers.map((answer) => (
                             <button
-                                className="text-center p-3 transition ease-in-out delay-150 bg-gray-500  text-white hover:translate-y-1 hover:scale-100 hover:bg-sky-200 duration-300 rounded-lg "
+                                className="text-center p-3 transition ease-in-out delay-150 bg-gray-500  text-white hover:translate-y-1 hover:scale-100 hover:bg-sky-200 duration-300 rounded-lg"
                                 onClick={() => handleAnswerSelected(answer)}
                             >
                                 {answer.title}
