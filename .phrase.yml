@@ -1,0 +1,14 @@
+phrase:
+  access_token: f43ec496f1397aa661b10756a68e378c714b33d75acc385183305f48d798ce0f
+  project_id: 9276290905ecf0211c7b98c987a2300f
+  push:
+    sources:
+    - file: ./src/languages/translation.json
+      params:
+        locale_id: 'es'
+        file_format: simple_json
+  pull:
+    targets:
+    - file: ./src/languages/translation.json
+      params:
+        file_format: simple_json
